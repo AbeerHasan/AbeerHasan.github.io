@@ -1,0 +1,233 @@
+/*
+Theme Name: Meditation
+Version: 1.2.0
+Author: abeer
+Author URI: http://localhost/wordpress/wp-admin/themes.php?theme=meditation
+Description: Meditation is a flexbox responsive theme
+*/
+
+body {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    background-color:black
+}
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+/*------------------------------------------------------------------*/
+header{
+    position: fixed;
+    background-color: black;
+    padding: 4px;    
+    width: 100%;
+    top: 0;
+    border:1px solid black;
+}
+.logo{
+    max-width: 100px;
+    min-width: 70px;
+    height: aute;
+}
+header .logo{
+    float: left;
+    width: 10%;
+}
+header #log_in{
+    float: right;
+    width: 50%;
+}
+header #log_in input{
+    float: left;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+header #log_in #login{
+    background-color: #6495ED;
+    
+}
+header #log_in #frm{
+    float: right;
+    margin-right: 10px;
+}
+/*------------------------------------------------------------------*/
+#container{
+    margin-top:95.4px;
+    bottom: 0;
+    background-color: black
+}
+
+#registration_form{
+    padding: 5%;
+    background-image: url("http://localhost/wordpress/wp-content/uploads/2018/05/m3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+#registration_form h1{
+    color: #2F4F4F;
+    font:bold 150% 'Indie Flower', cursive;
+    float: left;
+    margin-top:0px;
+    margin-left: 0px;
+ 
+}
+#form h3{
+    margin-top: 10px;
+    margin-bottom: 0px
+ }
+#form{
+    background-color: #ffffff;
+    border:0.5px solid gray;
+    padding-left:1.5%;
+    padding-right: 1.5%;
+    width: 270px;
+    height: auto;
+    margin-left: 60%;
+    margin-top: auto;
+    margin-bottom: auto
+
+}
+#form #done{
+    background-color: #6495ED;
+    height: 30px;
+    width: 97%;
+}
+#form input{
+    width: 95%;
+    margin-bottom: 5%;
+}
+/*----------------------------------------------------------------------------*/
+#Content{
+    color: #2F4F4F;
+    width: 90%;
+    text-align: center;
+    font:bold 1.5em 'Indie Flower', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+h4{
+    font:bold 1em 'Indie Flower', cursive;
+}
+#fields{
+    width: 100%
+}
+#fields dl{
+    display: inline-block;
+    width: 30%
+}
+#Content dt{
+    padding: 5px;
+}
+#Content img{
+    width:60%;
+    height:auto;
+}
+dt a{
+    text-decoration:none;
+    color: #6495ED ;
+}
+dt a:hover{
+    color: orangered; 
+}
+/*----------------------------------------------------------------------------*/
+footer{
+    border:0.5px inset gray;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+footer img{
+    padding: 2%;
+    padding-bottom: 0px;
+    margin-left: 2%;
+    float: left;
+    width: 7%;
+    height: auto
+}
+/*----------------------------------- responsive ----------------------------------------------------------------------------------------------------------*/
+ 
+@media screen and (max-width:1084px){
+    #container{
+        margin-top: 8%;
+    }
+} 
+@media screen and (max-width:956px){
+    #container{
+        margin-top: 9%;
+    }
+    
+ #registration_form{
+    padding-bottom:auto; 
+    padding-left: 2%;
+    background-image: url("http://localhost/wordpress/wp-content/uploads/2018/05/m3-c1.jpg");
+    background-repeat: no-repeat;
+    background-size: 120% auto;
+}
+#registration_form h1{
+    font:bold 100% 'Indie Flower', cursive;
+    width: 10%;
+}
+#form h3{
+    text-align:  justify;
+ }
+#form{
+    background-color: initial;
+    width: 50%;
+    height: auto;
+    margin-left:50%;
+    margin-right: auto;
+}
+}
+
+@media screen and (max-width:808px){
+#registration_form h1{
+    display: none;
+ }
+#registration_form{
+    background-image: url("http://localhost/wordpress/wp-content/uploads/2018/05/m3-c2.jpg");
+    background-size: 100% 100%;
+}
+#form{
+    width: 80%;
+    margin: auto;
+}    
+}
+
+@media screen and (max-width:724px){
+    #form h3{
+        padding-left:10%;
+        padding-right: 10%;
+        text-align: center
+    }
+    #container{
+        margin-top: 66.7px;
+    }
+}
+@media screen and (max-width:600px){
+    #form h3{
+        padding-left:10%;
+        padding-right: 10%;
+        text-align: center
+    }
+} 
+@media screen and (max-width:476px){
+    #fields dl{
+        display: inline;
+        width: 30%
+    }
+    #Content dt{
+        padding: 5px;
+    }
+    #Content img{
+        width:50%;
+        height:auto;
+    }
+    #registration_form{
+        padding-top:10%;
+    }
+}
+  
